@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in reakuten-review.gemspec
+# Specify your gem's dependencies in rakuten-review.gemspec
 gemspec
