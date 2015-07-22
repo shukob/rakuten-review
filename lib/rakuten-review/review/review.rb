@@ -23,7 +23,7 @@ module RakutenReview
     end
 
     def date
-      @date ||= Date.parse(review_html.css('.revUserEntryDate.dtreviewed').first.text)
+      @date ||= Date.parse(@html.css('.revUserEntryDate.dtreviewed').first.text)
     end
 
     def text
