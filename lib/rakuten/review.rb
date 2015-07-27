@@ -17,7 +17,7 @@ module Rakuten
       html = open(review_page_url).read.encode("UTF-8")
       doc = Nokogiri::HTML.parse(html)
       doc.css(".revRvwUserSec.hreview").each do |review_html|
-        reviews << Review::Review.new(review_html)
+        reviews << ::Rakuten::Review::Review.new(review_html)
         reviews
       end
 
